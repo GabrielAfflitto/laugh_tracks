@@ -1,0 +1,11 @@
+<h1>Comedians Index</h1>
+
+<% @comedians.each do |comedian| %>
+    <% @specials.each do |special| %>
+    <ul>
+      <li><%= comedian.name %></li>
+      <li><%= comedian.age %></li>
+      <li><%= special.comedian_id %></li>
+    </ul>
+    <% end %>
+<% end %>
